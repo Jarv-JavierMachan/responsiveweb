@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+.title{
+    background-color:#e5e5e5;padding:15px;text-align:center;
+    font-family:Verdana;color:#aaaaaa;
+}
+.container{
+    display: flex;
+}
+.menu{
+    /* float: left; */
+    width: 20%;
+    text-align: center;
+}
+.menu a{
+    background-color: #e5e5e5;
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: black;
+}
+
+.main{
+    /* float: left; */
+    width: 60%;
+    padding: 0 20px;
+}
+.right{
+    background-color: #e5e5e5;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+/* Estilos específicos para pantallas normales*/
+@media screen {
+    .title{
+        color: #15f;
+    }
+}
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+    /* For mobile phones: */
+    .container{
+        flex-direction: column;
+    }
+    .container div{
+        width: 100%;
+    }
+}
